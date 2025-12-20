@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* BACKGROUND */
+body {
+    background: linear-gradient(135deg, #ff0080, #7928ca, #00f2ff);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+/* TITLE */
+.page-title {
+    text-align: center;
+    font-size: 46px;
+    margin: 30px 0;
+}
+
+/* GRID */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    padding: 30px;
+    border-radius: 20px;
+    width: 340px;
+    position: relative;
+    animation: neonGlow 3s infinite alternate;
+}
+
+/* NEON ANIMATION */
+@keyframes neonGlow {
+    from {
+        box-shadow: 0 0 15px #00f2ff;
+    }
+    to {
+        box-shadow: 0 0 35px #ff00ff;
+    }
+}
+
+/* BADGE */
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #00ffcc;
+    color: #000;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 900;
+}
+
+/* IMAGES */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* SIZE SELECTOR */
+.sizes {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.sizes input {
+    display: none;
+}
+
+.sizes label {
+    padding: 10px 14px;
+    background: #222;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sizes input:checked + label {
+    background: #00f2ff;
+    color: #000;
+    box-shadow: 0 0 10px #00f2ff;
+}
+
+/* PRICE */
+.price {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 900;
+    cursor: pointer;
+    background: linear-gradient(135deg, #00ffcc, #ff00ff);
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+}
