@@ -1,123 +1,114 @@
-# python-Task4
+# Sneaker Product page – HTML & CSS Properties Documentation
 
-Sneaker Product page – HTML & CSS Properties Documentation
+This document explains **only the most important HTML tags and CSS properties** used in the Sneaker Drops project. It is concise and suitable for **presentation, viva, or exam writing**.
 
-This document explains only the most important HTML tags and CSS properties used in the Sneaker Drops project. It is concise and suitable for presentation, viva, or exam writing.
+---
 
-1. IMPORTANT HTML TAGS USED
+## 1. IMPORTANT HTML TAGS USED
 
-<div>
+### `<div>`
 
-Used as a container to group elements.
+* Used as a **container** to group elements.
+* Helps in layout creation using Flexbox and Grid.
 
-Helps in layout creation using Flexbox and Grid.
+### `<h1>`, `<h2>`
 
-<h1>, <h2>
+* Used for **headings**.
+* Improves content hierarchy and readability.
 
-Used for headings.
+### `<p>`
 
-Improves content hierarchy and readability.
+* Used for **short text descriptions** like taglines.
 
-<p>
+### `<img>`
 
-Used for short text descriptions like taglines.
+* Displays product images.
+* Works with CSS Grid for image layout.
 
-<img>
+### `<span>`
 
-Displays product images.
+* Inline element used for **badges and size labels**.
 
-Works with CSS Grid for image layout.
+### `<button>`
 
-<span>
+* Represents a **call-to-action** (Add to Cart).
 
-Inline element used for badges and size labels.
+### `<link>`
 
-<button>
+* Used to connect external CSS and Google Fonts.
 
-Represents a call-to-action (Add to Cart).
+---
 
-<link>
+## 2. IMPORTANT CSS PROPERTIES USED
 
-Used to connect external CSS and Google Fonts.
+### `display: flex`
 
-2. IMPORTANT CSS PROPERTIES USED
+* Aligns items horizontally or vertically.
+* Used to center elements easily.
 
-display: flex
+### `display: grid`
 
-Aligns items horizontally or vertically.
+* Creates a grid layout.
+* Used to arrange product images evenly.
 
-Used to center elements easily.
+### `justify-content` & `align-items`
 
-display: grid
+* Used with Flexbox to **center elements**.
 
-Creates a grid layout.
+### `background: linear-gradient()`
 
-Used to arrange product images evenly.
+* Creates colorful gradient backgrounds.
+* Used in body, product card, and buttons.
 
-justify-content & align-items
+### `border-radius`
 
-Used with Flexbox to center elements.
+* Rounds corners of cards, buttons, and images.
+* Gives a modern UI look.
 
-background: linear-gradient()
+### `box-shadow`
 
-Creates colorful gradient backgrounds.
+* Adds shadow and glow effects.
+* Used in neon animation and selected size.
 
-Used in body, product card, and buttons.
+### `position: relative / absolute`
 
-border-radius
+* Used to place the badge on the product card.
 
-Rounds corners of cards, buttons, and images.
+### `@keyframes` + `animation`
 
-Gives a modern UI look.
+* Creates continuous animations.
+* Used for neon glowing effect on product cards.
 
-box-shadow
+### `transition`
 
-Adds shadow and glow effects.
+* Smoothly animates hover effects.
 
-Used in neon animation and selected size.
+### `transform: scale()`
 
-position: relative / absolute
+* Creates zoom-in effect on hover.
 
-Used to place the badge on the product card.
+### `gap`
 
-@keyframes + animation
+* Adds space between elements in Flexbox and Grid.
 
-Creates continuous animations.
+### `min-height: 100vh`
 
-Used for neon glowing effect on product cards.
+* Makes the page cover full screen height.
 
-transition
+---
 
-Smoothly animates hover effects.
+### 3. SECTIONS OF THIS PAGE
 
-transform: scale()
+1. **Page Background** – Gradient background with full height.
+2. **Page Title** – Main heading centered at top.
+3. **Container** – Holds all product cards.
+4. **Product Cards** – Individual sneaker items with neon glow animation.
+5. **Badges** – Labels like NEW or LIMITED.
+6. **Image Section** – Grid of product images.
+7. **Size Selection** – Options for shoe sizes.
+8. **Price Display** – Shows product price.
+9. **Button Section** – Add to Cart button with hover effect.
 
-Creates zoom-in effect on hover.
+---
 
-gap
-
-Adds space between elements in Flexbox and Grid.
-
-min-height: 100vh
-
-Makes the page cover full screen height.
-
-3. SECTIONS OF THIS PAGE
-
-Page Background – Gradient background with full height.
-
-Page Title – Main heading centered at top.
-
-Container – Holds all product cards.
-
-Product Cards – Individual sneaker items with neon glow animation.
-
-Badges – Labels like NEW or LIMITED.
-
-Image Section – Grid of product images.
-
-Size Selection – Options for shoe sizes.
-
-Price Display – Shows product price.
-
-Button Section – Add to Cart button with hover effect.
+>
