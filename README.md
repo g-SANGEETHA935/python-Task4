@@ -1,73 +1,50 @@
-# python-Task4
+# Sneaker Product Page – HTML & CSS Properties Documentation
 
-E-Commerse sneakers product page
+This document explains **the main HTML tags and CSS properties** used in the Sneaker Drops project and specifies **what each property is used for on this page**. It is concise and suitable for **presentation, viva, or exam writing**.
 
-**Sneaker World** is a simple front‑end e‑commerce website designed to display a collection of
-sneakers in a clean, modern, and responsive layout. The project focuses on presenting
-products attractively using HTML and CSS, making it suitable for beginners learning web
-design.
-This project can be used for academic presentations, mini‑projects, or portfolio demonstrations.
-Objective
-* To design a visually appealing sneaker shopping interface
-* To understand the structure of HTML and styling with CSS
-* To implement a responsive product grid layout
-* To practice UI design concepts such as cards, buttons, and hover effects
-Elements:
-
-Navigation Bar
-* Website title: **SNEAKER WORLD**
-* Tagline: *Comfort. Style. Performance*
-* Search bar with search icon
-Product Section
-* Products are displayed using **cards**
-* Each sneaker card contains:
-* Product image
-* Sneaker name
-* Price (₹)
-* Available sizes
-* Short description
-* "Add to Cart" button
-
-Navigation Styling
-* Flexbox used for alignment
-* Search bar styled with rounded borders
-* Font and color styling for heading
-Product Grid Layout
-* CSS Grid with **4 columns** for large screens
-* Gap spacing between sneaker cards
-* Hover effects:
-* Card zoom-in effect
-* Button scale effect
-Buttons
-* Blue background
-* White text
-* Rounded corners
-* Smooth hover animation
 ---
-Important HTML & CSS Elements Used
-This section highlights the **main HTML tags and CSS properties** used in the project, making
-it easier for the presenter to explain.
-Important HTML Tags
-* `<nav>` – Used to create the navigation bar at the top of the page
-* `<div>` – Used as containers for layout and sneaker cards
-* `<h1>, <h3>, <h4>, <h6>` – Used for headings, product names, and descriptions
-* `<img>` – Displays sneaker images
-* `<input>` – Used for the search bar
-* `<button>` – "Add to Cart" button for each product
-* `<link>` – Links external CSS file and Font Awesome icons
-* `<span>` – Highlights sneaker prices
-Important CSS Properties
-* `display: flex` – Aligns items in the navigation bar
-* `display: grid` – Creates a grid layout for sneaker cards
-* `grid-template-columns` – Controls number of columns in the grid
-* * `box-shadow` – Adds shadow effect to cards
-* `border-radius` – Creates rounded corners (search bar & buttons)
-* `padding` & `margin` – Controls spacing
-* `hover` – Adds interactive effects on cards and buttons
-* `transition` – Smooth animation effects
-* `@media query` – Makes the website responsive for mobile screens
-. Responsive Design
-* Media query applied for screens **below 600px**
-* Grid layout changes from 4 columns to **2 columns**
-* Search bar and heading size adjusted for mobile view
-This ensures the website is mobile‑friendly.
+
+## 1. IMPORTANT HTML TAGS USED
+
+* `<div>` – Container for grouping elements and creating layout sections (used in container, product cards, image grids, and size selections).
+* `<h1>`, `<h2>` – Headings for page title and product names.
+* `<p>` – Taglines or short descriptions for products.
+* `<img>` – Displays product images within the image grid.
+* `<span>` – Badges (NEW/LIMITED) and size labels.
+* `<button>` – Add to Cart call-to-action.
+* `<link>` – Connects external CSS and Google Fonts.
+
+---
+
+## 2. IMPORTANT CSS PROPERTIES USED AND THEIR PURPOSE
+
+* `display: flex` – Used to align product cards, center elements, and align sizes horizontally.
+* `display: grid` – Creates the 3-column image grid layout for product images.
+* `justify-content` & `align-items` – Centers product cards and content within them.
+* `background: linear-gradient()` – Adds colorful gradients to body background, product cards, and buttons.
+* `border-radius` – Rounds corners of product cards, images, and buttons for a modern look.
+* `box-shadow` – Creates neon glow effect on product cards and highlights selected size.
+* `position: relative / absolute` – Positions badges correctly on product cards.
+* `@keyframes` + `animation` – Animates neon glow effect continuously on product cards.
+* `transition` – Smooth hover effects for buttons and sizes.
+* `transform: scale()` – Zoom-in effect when hovering on buttons.
+* `gap` – Spacing between images in the grid and sizes in the size selector.
+* `min-height: 100vh` – Ensures page covers the full viewport height.
+
+---
+
+## 3. SECTIONS OF THIS PAGE
+
+1. **Page Background** – Uses gradient background to cover full screen height.
+2. **Page Title** – Centered main heading using text-align and font size.
+3. **Container** – Flexbox container holding all product cards.
+4. **Product Cards** – Each card uses gradients, border-radius, box-shadow, and animation.
+5. **Badges** – Positioned absolutely with background color and font weight.
+6. **Image Section** – Grid layout of images with gap and border-radius.
+7. **Size Selection** – Flex layout with spacing and hover effects using transition and box-shadow.
+8. **Price Display** – Bold and larger font for product price.
+9. **Button Section** – Gradient background, rounded corners, hover zoom effect using transform and transition.
+
+---
+
+###
